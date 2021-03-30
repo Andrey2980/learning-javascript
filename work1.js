@@ -15,9 +15,11 @@ let fahrenHeit = (9 / 5) * celsiUs + 32;
 console.log (fahrenHeit);
 alert ("Температура по шкале Фаренгейта, составляет:"+ " " + fahrenHeit + " " + "градусов");
 
+
 let naMe = ("admin: Василий");
 let admin = naMe;
 console.log(admin);
+
 
 console.log (1000 + "108");
 
