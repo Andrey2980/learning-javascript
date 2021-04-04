@@ -1,36 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
+</head>
 <body>
     <h1>
         DZ №1
     </h1>
 
-    <p>..1 defer.содержимое до скрипта...</p>
+    <p>...1 defer.содержимое до скрипта...</p>
     <script>
         document.addEventListener('DOMContentLoaded', () => alert("Дерево DOM готово после скрипта с 'defer'!")); // (2)
     </script>
     <script defer src="https://javascript.info/article/script-async-defer/long.js?speed=1"></script>
-    <p>..2 defer.содержимое после скрипта..</p>
+    <p>...2 defer.содержимое после скрипта..</p>
 
 
-    <p>..3 asunc.содержимое перед скриптами..</p>
+    <p>...3 asunc.содержимое перед скриптами..</p>
     <script>
         document.addEventListener('DOMContentLoaded', () => alert("DOM готов!"));
     </script>
     <script async src="https://javascript.info/article/script-async-defer/long.js"></script>
     <script async src="https://javascript.info/article/script-async-defer/small.js"></script>
-    <p>..4 asunc.содержимое после скриптов...</p>
-
-
+    <p>...4 asunc.содержимое после скриптов...</p>
     
-    <script type="text/javascript" src="work1.js">
-
-
-
-    </script>
+    <script type="text/javascript" src="work1.js"></script>
 </body>
-        
-</head>
+
 </html>
