@@ -22,20 +22,3 @@ console.log(admin);
 console.log (1000 + "108");
 
 
-function start() {
-    const yes = confirm ("Хотите сыграть в игру?")
-
-    if(!yes) {
-        return;
-    }
-    
-    play();
-
-} 
-
-function play () {
-    alert();
-}
-
-
-
