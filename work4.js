@@ -35,10 +35,10 @@ console.log(decompositionOfNumber());
 //задание номер 1
 
 let korobka = {
-    id: 00001,
+    id: 0.1,
     name: "apple",
     price: 1123.09,
     description: "<P>"
 }
 
-console.log(korobka.id + korobka.price); //почему такой результат 1124.09 ?
+console.log(korobka.id + korobka.price); 
