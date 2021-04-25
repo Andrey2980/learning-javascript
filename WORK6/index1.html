@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SLIDER</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	
+</head>
+
+<body> <!-- Функция указанная инлайн, выполняется в приоритетном порядке   onload="onloadInline()"-->
+	<div class="header">
+		<h1>SLIDER</h1>
+		<a href="work6.1.html">На главную</a>
+	</div>	
+	<div class="wrapper">
+		
+		<div class="content">
+			<div class="gallery">
+				<img id="image-1" src="https://picsum.photos/seed/1/800" alt="Изображение 1">
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="thumbnails">
+				<img id="image-thumbnail-1" src="https://picsum.photos/seed/1/150?blur" data-seed="1" alt="thumbnail-1">
+				<img id="image-thumbnail-2" src="https://picsum.photos/seed/2/150?blur" data-seed="2" alt="thumbnail-2">
+				<img id="image-thumbnail-3" src="https://picsum.photos/seed/3/150?blur" data-seed="3" alt="thumbnail-3">
+			</div>
+		</div>
+
+		<div class="slider-buttons">
+			<button class="button-next" id="buttonN" onclick="nextImage()">></button>
+			<button class="button-prev" id="buttonP" onclick="prevImage()"><</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="work6.1-3.js"></script>
+</body>
+</html>

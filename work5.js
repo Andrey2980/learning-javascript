@@ -13,14 +13,14 @@ let outStr = `
             <div class="box-inner">h</div>
             </div>
         </div>
-        <div class="box">&#9820;</div>
+        <div class="box"><i class="fas fa-chess-rook"></i></div>
         <div class="box">&#9822;</div>
         <div class="box">&#9821;</div>
         <div class="box">&#9819;</div>
         <div class="box">&#9818;</div>
         <div class="box">&#9821;</div>
         <div class="box">&#9822;</div>
-        <div class="box">&#9820;</div>
+        <div class="box"><i class="fas fa-chess-rook"></i></div>
 
         <div class="box">&#9823;</div>
         <div class="box">&#9823;</div>
