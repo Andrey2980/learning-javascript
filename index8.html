@@ -1,0 +1,57 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+<body>
+    <h1>
+        DZ №8
+    </h1>
+   
+    <p>1. if (!("a" in window)) { 
+        var a = 1;
+        } - этот цикл никак не влияет на ход исполнения нижеуказанного кода </p>
+    <br>
+    <p>2. alert(a); - тело функции function a() - обьявленной в п. 10</p>
+    <br>
+    
+    <p>3. var b = function a(x) { 
+        x && a(--x);
+        };- переопределяет function b(x, y, a)</p>
+    <br>
+    <p>4. alert(a); - тело функции function a() - обьявленной в п. 10</p>
+    <br>
+    <p>5. function a(x) {
+        return x * 2;
+        }</p>
+    <br>
+    <p>6. var a;</p>
+    <br>
+    <p>7. alert(a); - тело функции function a() - обьявленной в п. 10</p>
+    <br>
+    
+    <p>8. function b(x, y, a) {
+        arguments[2] = 10;
+
+    alert(a);   
+        
+        }- функция b - переопределена в п.3, таким образом отсутствует аргумет (а) в области видимости алерта</p>
+    <br>
+    <p>9. b(1, 2, 3);</p>
+    <br>
+    <p>10. function a() {
+    
+        alert(this) 
+        }-  будет выведен голбальный window ;
+       </p>
+    <br>
+   <p> 11. a.call(null); - метод передающий (качестве контекста  this) в функцию указанную в п.10
+    глобальный объект window (в нестрогом режиме (use strict) null - заменяется глобальным объектом)</p>
+    <br>
+    
+
+    <div class="out"></div>
+    <script type="text/javascript" src="work--.js"></script>
+</body>
+</html>
