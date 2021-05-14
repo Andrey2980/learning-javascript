@@ -1,0 +1,137 @@
+.box {
+	display: grid;
+	grid-template-columns: repeat(8, 100px);
+	grid-template-rows: repeat(8, 100px);
+	grid-column-gap: 2px;
+	grid-row-gap: 2px;
+    margin: 0 0 0 0;
+    width: 814px;
+    height: 814px;
+    border: 2px solid;
+    z-index: 2;
+
+	/*display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+}
+
+.wrapper {
+    width: 887px;
+    height: 910px;
+    border: 2px solid;
+}
+
+.numbers-l {
+    height: 820px;
+    margin-top: 69px;
+    width: 30px;
+    float: left;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.number-l8,
+.number-l7,
+.number-l6,
+.number-l5,
+.number-l4,
+.number-l3,
+.number-l2,
+.number-l1 {
+    width: 40px;
+    height: 800px;
+    text-align: center;
+    
+}
+
+.nimbers-r {
+    height: 820px;
+    margin-top: 69px;
+    width: 30px;
+    float: right;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.number-r8,
+.number-r7,
+.number-r6,
+.number-r5,
+.number-r4,
+.number-r3,
+.number-r2,
+.number-r1 {
+    width: 40px;
+    height: 800px;
+    text-align: center;
+    
+}
+
+
+.letters-top,
+.lettres-bottom {
+    height: 49px;
+    width: 772px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.letters-top {
+    margin-left: 75px;
+}
+
+.lettres-bottom {
+    margin-left: 59px;
+}
+
+.letters-ta,
+.letters-tb,
+.letters-tc,
+.letters-td,
+.letters-te,
+.letters-tf, 
+.letters-tg,
+.letters-th {
+    width: 800px;
+    height: 40px;
+    text-align: center;
+    
+}
+
+
+.item {
+	/*width: 100px;
+	height: 150px;*/
+	border: 1px solid;
+    text-align: center;
+    
+}
+/*.item:nth-child(-2n+9), 
+.item:nth-child(9) ~ div:nth-child(-2n+16), 
+.item:nth-child(17) ~ div:nth-child(-2n+25), 
+.item:nth-child(25) ~ div:nth-child(-2n+32), 
+.item:nth-child(33) ~ div:nth-child(-2n+41), 
+.item:nth-child(41) ~ div:nth-child(-2n+48), 
+.item:nth-child(49) ~ div:nth-child(-2n+57), 
+.item:nth-child(57) ~ div:nth-child(-2n+64){
+        background-color: #482b1a;
+        color: #fff;
+}*/
+
+
+.glow-w {
+    background: radial-gradient(circle, rgba(134,134,134,1) 0%, rgba(249,244,244,1) 100%);
+    color: #333
+}
+
+.glow-b {
+        background: radial-gradient(circle, rgb(71, 83, 151) 0%, rgb(46, 44, 44) 100%);
+    color: #fff;
+}
+
+
+
+
