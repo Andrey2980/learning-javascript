@@ -72,13 +72,13 @@ for (let i = 0; i < 10; console.log(i++));
 	
 
 
-																	//Нарисовать пирамиду с помощью console.log
+												//Нарисовать пирамиду с помощью console.log
 
 for(let i = 0; i < 21; i++) {
 	console.log("*".repeat(i));
 } 
 
-//Нарисовать пирамиду 
+												//Нарисовать пирамиду 
 
 
 let out = document.querySelector(".out");
