@@ -1,5 +1,12 @@
 'use strict';
 
+														//Преобразуем строку в значение
+
+console.log(10 + Number("5"));
+
+
+                                                 // Выводим натуральные числа
+
 function isSimple(num) {
 	let i = 3;
 
@@ -27,61 +34,52 @@ while (n <= 100) {
 
 isSimple()
 
+                                                            //Подсчет корзины
 
-// Сущность корзины
+let result = 0;
+let arr = [123.10, 123.10, 123.10];
 
-//button.onclick = () => {
-    //let a = +INPUT_A.value;
-    //let b = +INPUT_B.value; 
-
-    //if (a >= 0 && b >= 0) {  
-        //console.log(a-b);
-    //} else if (a < 0 && b < 0) {  
-        //console.log(a*b);
-   // } else { 
-        //console.log(a+b);
-    //}
-//}
-
-const button = document.querySelector("button").value;
-const INPUT_A = document.querySelector(".card-a").value;
-const INPUT_B = document.querySelector(".card-b").value;
-const INPUT_C = document.querySelector(".card-c").value;
-
-let sum1 = +INPUT_A.value;
-let sum2 = +INPUT_B.value;
-let sum = +INPUT_C.value;
-
-
-button.onclick = () => {
-	sum();
-	final();
+for (let i = 0; i < arr.length; i++) {
+	result += arr[i];
 }
-console.log(sum);
-//function final(sum1, sum2){
-	//return sum1 + sum2;
-//}
-function sum(cost, idProduct) {
-			if (idProduct == "apple")
-				sum1 += cost;
-			if (idProduct == "computer") 
-				sum2 += cost;
 
-			sum += sum1 + sum2;
-			return sum;
-		}
-		function final(sum1, sum2){
-		sum = sum1 + sum2;
-		return sum;
-		
+console.log("Посчитали корзину",result);
+
+																			//Задача с корзиной
+
+
+let products =[ ["laptop", 50000], ["telephone", 15000],["smartWatch", 5000] ];
+
+function countBasketPrice(arr) {
+	let sum = 0;
+	for (let i = 0; i < products.length - 1; i++) {
+		sum += products[i][1];
 	}
-	console.log(sum)
+
+	return sum;
+}
+
+console.log("Посчитали корзину через функцию", countBasketPrice(products));
 
 
 
+									// Использование for вне тела цикла вывести значение от 0 до 9
 
 
-// Задание № 6 (надо подумать как лучше сделать) 
+
+for (let i = 0; i < 10; console.log(i++));
+
+	
+
+
+																	//Нарисовать пирамиду с помощью console.log
+
+for(let i = 0; i < 21; i++) {
+	console.log("*".repeat(i));
+} 
+
+//Нарисовать пирамиду 
+
 
 let out = document.querySelector(".out");
 
